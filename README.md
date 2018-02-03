@@ -1,8 +1,8 @@
-# Transcriber
+# neural-transcriber
 
 Mine and Akuan's neural + WFST transcriber.
 
-Contains code to preprocess TedLium, Librispeech and VCTK from https://github.com/buriburisuri/speech-to-text-wavenet.
+Contains code to preprocess TedLium, Librispeech and VCTK from https://github.com/buriburisuri/speech-to-text-wavenet. We'd have used the Switchboard corpus if we had £1500 to spare.
 
 Achieves alignment-free transcription using a neural convolution through time on the MFCC representation of an audio signal.
 
@@ -14,6 +14,10 @@ We tried the following configurations:
 4. Phoneme-level acoustic model and WFST language model.
 
 All but the first were about 2 orders of magnitude slower than https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/41176.pdf
+
+From profiling, we suspect this was due to our use of the Python bindings of OpenFST.
+
+We ran out of time before we could fully diagnose the problem.
 
 Softmax peaks on 'What is the phone number?':
 ![peaks](https://github.com/boyentenbi/neural-transcriber/blob/master/phonemectc.png)
