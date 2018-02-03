@@ -15,9 +15,7 @@ We tried the following configurations:
 
 All but the first were about 2 orders of magnitude slower than https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/41176.pdf
 
-From profiling, we suspect this was due to our use of the Python bindings of OpenFST.
-
-We ran out of time before we could fully diagnose the problem.
+From profiling, we know this was due to our language models. However, we ran out of time before we could fully diagnose the problem.
 
 Softmax peaks on 'What is the phone number?':
 ![peaks](https://github.com/boyentenbi/neural-transcriber/blob/master/phonemectc.png)
