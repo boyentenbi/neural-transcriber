@@ -13,7 +13,7 @@ The peaks of our model's softmax layer on me saying 'What is the phone number?':
 * How to use terminal multiplexing (very useful)
 * How to do 'pipelining'. Converting MP3s to MFCCs takes a long time and we had to robustly convert gigabytes of data on spot-instances which are prone to failure
 * How to use robustly AWS spot instances with a persistent volume. (P.S the GUI is really good now) 
-* How finite automata are useful in ASR
+* What a finite automaton is, different kinds of WFSTs, how the tropical semiring relates to the viterbi approximation. 
 * A bit about profiling code
 * Training the neural net is almost always the easy bit. Preprocessing and post-processing are a lot harder.
 
